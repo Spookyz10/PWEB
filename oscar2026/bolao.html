@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bolão - Oscar 2026</title>
+  </head>
+  <body>
+    <header>
+      <h1>Portal Oscar 2026</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="indicados.html">Indicados</a></li>
+          <li><a href="analise.html">Análise</a></li>
+          <li><a href="bolao.html">Bolão</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>O Palpite do Agente</h2>
+
+      <form action="#" method="post">
+        <!-- Dados Pessoais -->
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <br /><br />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+          <br /><br />
+
+          <label for="senha">Código de Acesso (senha):</label>
+          <input type="password" id="senha" name="senha" required />
+          <br /><br />
+
+          <label for="cidade">Cidade de Origem:</label>
+          <input type="text" id="cidade" name="cidade" list="cidades" />
+          <datalist id="cidades">
+            <option value="Recife"></option>
+            <option value="Maceió"></option>
+            <option value="Rio de Janeiro"></option>
+            <option value="São Paulo"></option>
+          </datalist>
+          <br /><br />
+
+          <label for="data-assistiu">Data que assistiu ao filme:</label>
+          <input type="date" id="data-assistiu" name="data-assistiu" />
+          <br /><br />
+        </fieldset>
+
+        <!-- Palpites -->
+        <fieldset>
+          <legend>Palpites</legend>
+
+          <label for="categoria">Categoria:</label>
+          <select id="categoria" name="categoria">
+            <option value="melhor-filme">Melhor Filme</option>
+            <option value="melhor-direcao">Melhor Direção</option>
+            <option value="melhor-ator">Melhor Ator</option>
+            <option value="melhor-atriz">Melhor Atriz</option>
+          </select>
+          <br /><br />
+
+          <p>Ator favorito:</p>
+          <input
+            type="radio"
+            id="wagner"
+            name="ator-favorito"
+            value="wagner-moura"
+          />
+          <label for="wagner">Wagner Moura — O Agente Secreto</label>
+          <br />
+          <input
+            type="radio"
+            id="michael"
+            name="ator-favorito"
+            value="michael-b-jordan"
+          />
+          <label for="michael">Michael B. Jordan — Pecadores</label>
+          <br />
+          <input
+            type="radio"
+            id="leo"
+            name="ator-favorito"
+            value="leonardo-dicaprio"
+          />
+          <label for="leo">Leonardo DiCaprio — Uma Batalha Após a Outra</label>
+          <br />
+          <input
+            type="radio"
+            id="timothee"
+            name="ator-favorito"
+            value="timothee-chalamet"
+          />
+          <label for="timothee">Timothée Chalamet — Marty Supreme</label>
+          <br /><br />
+
+          <label for="confianca"
+            >Nível de confiança na vitória brasileira (0 a 100):</label
+          >
+          <br />
+          <input
+            type="range"
+            id="confianca"
+            name="confianca"
+            min="0"
+            max="100"
+          />
+          <br /><br />
+
+          <label for="justificativa">Justificativa técnica:</label>
+          <br />
+          <textarea
+            id="justificativa"
+            name="justificativa"
+            rows="5"
+            cols="50"
+          ></textarea>
+          <br /><br />
+        </fieldset>
+
+        <button type="submit">Enviar Palpite</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Portal Oscar Brasil</p>
+      <p>Cerimônia: <time datetime="2026-03-15">15 de março de 2026</time></p>
+      <address>
+        <a href="mailto:contato@oscarportalbrasil.com"
+          >contato@oscarportalbrasil.com</a
+        >
+      </address>
+    </footer>
+  </body>
+</html>
