@@ -463,3 +463,12 @@ body {
   resize: vertical;
   min-height: 120px;
 }
+
+.rodape-base {
+  background-color: #001f3f;
+  color: #a0b4c8;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+}
