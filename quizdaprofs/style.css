@@ -1,14 +1,24 @@
 body {
   margin: 0;
-  background-color: rgb(161, 246, 255);
+  min-height: 100vh;
+  background: linear-gradient(to top, #00c6ff, #0072ff);
+  background-repeat: no-repeat;
   font-family: "Lato", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .mainp {
   font-family: "Lato", sans-serif;
   color: white;
   text-shadow: 2px 2px 4px black;
-  font-size: 28px;
+  font-size: 50px;
+  font-weight: bold;
   text-align: center;
   width: 70%;
   margin: 100px auto;
@@ -95,10 +105,13 @@ input.wrong:checked + .option {
   border: none;
   background-color: rgb(161, 246, 255);
   cursor: pointer;
+  transition: background-color 0.5s ease-out;
 }
 
 .nextbtn:hover {
   background-color: rgb(120, 220, 235);
+  border-color: rgb(120, 220, 235);
+  border: 1px solid;
 }
 
 .nextbtn a {
@@ -117,16 +130,20 @@ input.wrong:checked + .option {
   font-size: 22px;
   border-radius: 20px;
   padding: 15px 40px;
-  border: none;
-  background-color: white;
+  border-color: rgb(120, 220, 235);
+  border: 1px solid;
+  background: linear-gradient(to bottom, #6d99e0, #5c98f1);
   cursor: pointer;
+  transition: background-color 0.5s ease-out;
 }
 
 .startbtn button:hover {
   background-color: rgb(230, 230, 230);
+  border-color: rgb(120, 220, 235);
+  border: 3px solid;
 }
 
 .startbtn a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
