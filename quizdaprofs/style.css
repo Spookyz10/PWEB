@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  background-color: rgb(161, 246, 255);
+  font-family: "Lato", sans-serif;
+}
+
+.mainp {
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 28px;
+  text-align: center;
+  width: 70%;
+  margin: 100px auto;
+}
+
+.title {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.maintitle {
+  font-family: "Lato", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mainframe {
+  border-radius: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.option {
+  font-family: "Lato", sans-serif;
+  border: 3px solid rgb(200, 200, 200);
+  border-radius: 20px;
+  width: 40%;
+  min-height: 60px;
+  margin: 8px;
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.option:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+input.correct:checked + .option {
+  border: 3px solid green;
+  background-color: rgb(210, 255, 210);
+}
+
+input.wrong:checked + .option {
+  border: 3px solid red;
+  background-color: rgb(255, 210, 210);
+}
+
+.nextbtn {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgb(161, 246, 255);
+  cursor: pointer;
+}
+
+.nextbtn:hover {
+  background-color: rgb(120, 220, 235);
+}
+
+.nextbtn a {
+  text-decoration: none;
+  color: black;
+}
+
+.startbtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.startbtn button {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  border-radius: 20px;
+  padding: 15px 40px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.startbtn button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.startbtn a {
+  text-decoration: none;
+  color: black;
+}
